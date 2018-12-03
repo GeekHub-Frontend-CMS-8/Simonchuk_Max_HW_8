@@ -166,3 +166,67 @@
   .section__skills_flex {
     display: flex;
     justify-content: space-between; }
+
+.section__clients {
+  padding-top: 100px;
+  background-color: #fafafa;
+  padding-bottom: 100px; }
+  .section__clients_main-title {
+    font-family: "Brandon Grotesque Light",sans-serif;
+    font-weight: 300;
+    color: #222222;
+    font-size: 60px;
+    display: flex;
+    justify-content: center; }
+  .section__clients_main-span {
+    font-family: "Brandon Grotesque Bold",sans-serif;
+    font-weight: 700;
+    color: #222222;
+    font-size: 60px;
+    margin-left: 10px;
+    margin-bottom: 18px; }
+  .section__clients_main-text {
+    color: #777777;
+    font-family: "Brandon Grotesque",sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 46px; }
+  .section__clients_block-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px; }
+  .section__clients_circle {
+    width: 221px;
+    height: 221px;
+    border-radius: 200px;
+    background-color: #111111; }
+  .section__clients_speak-box {
+    background: url("../img/Speak_Box.png");
+    width: 663px;
+    height: 174px;
+    margin-top: 30px; }
+  .section__clients_text {
+    width: 490px;
+    color: #777777;
+    font-family: "Brandon Grotesque",sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 40px 74px 13px 74px; }
+  .section__clients_authors {
+    width: 331px;
+    color: #7690c5;
+    font-family: "Brandon Grotesque",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 75px; }
+  .section__clients_block-2 {
+    display: flex;
+    justify-content: space-between; }
+  .section__clients_speak-box-second {
+    background: url("../img/Speak_Box-2.png");
+    width: 662px;
+    height: 174px;
+    margin-top: 24px; }
