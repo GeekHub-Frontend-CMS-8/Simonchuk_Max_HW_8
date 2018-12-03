@@ -230,3 +230,26 @@
     width: 662px;
     height: 174px;
     margin-top: 24px; }
+
+.section__logos {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .section__logos_around {
+    display: flex;
+    justify-content: space-around; }
+  .section__logos_img-1 {
+    background: url("../img/img-1.png");
+    width: 161px;
+    height: 30px; }
+  .section__logos_img-2 {
+    background: url("../img/img-2.png");
+    width: 186px;
+    height: 42px; }
+  .section__logos_img-3 {
+    background: url("../img/img-3.png");
+    width: 131px;
+    height: 41px; }
+  .section__logos_img-4 {
+    background: url("../img/img-4.png");
+    width: 167px;
+    height: 42px; }
