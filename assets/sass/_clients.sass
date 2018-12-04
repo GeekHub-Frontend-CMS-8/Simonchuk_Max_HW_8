@@ -28,16 +28,35 @@
     display: flex
     justify-content: space-between
     margin-bottom: 80px
+    @media screen and (max-width: 805px)
+      display: block
   &_circle
-    width: 221px
-    height: 221px
-    border-radius: 200px
-    background-color: #111111
+    background: url("../img/clients-img.png")
+    max-width: 230px
+    height: 230px
+    width: 100%
+    @media screen and (max-width: 805px)
+      margin: auto
   &_speak-box
     background: url("../img/Speak_Box.png")
     width: 663px
     height: 174px
     margin-top: 30px
+    @media screen and (max-width: 960px)
+      background: url("../img/Speak_Box.png")
+      width: 543px
+      height: 144px
+      margin-top: 30px
+    @media screen and (max-width: 805px)
+      margin: 20px auto
+      background: url("../img/Speak_Box.png")
+      width: 662px
+      height: 174px
+    @media screen and (max-width: 768px)
+      background: url("../img/Speak_Box-2.png")
+      width: 500px
+      height: 174px
+      margin-top: 24px
   &_text
     width: 490px
     color: #777777
@@ -46,6 +65,31 @@
     font-weight: 400
     line-height: 28px
     padding: 40px 74px 13px 74px
+    @media screen and (max-width: 960px)
+      width: 390px
+      color: #777777
+      font-family: "Brandon Grotesque",sans-serif
+      font-size: 21px
+      font-weight: 400
+      line-height: 28px
+      padding: 25px 54px 13px 54px
+    @media screen and (max-width: 805px)
+      width: 490px
+      color: #777777
+      font-family: "Brandon Grotesque",sans-serif
+      font-size: 25px
+      font-weight: 400
+      line-height: 28px
+      padding: 40px 74px 13px 74px
+    @media screen and (max-width: 768px)
+      width: 350px
+      color: #777777
+      font-family: "Brandon Grotesque",sans-serif
+      font-size: 25px
+      font-weight: 400
+      line-height: 28px
+      padding: 20px 74px 13px 74px
+
   &_authors
     width: 331px
     color: #7690c5
@@ -56,8 +100,25 @@
   &_block-2
     display: flex
     justify-content: space-between
+    @media screen and (max-width: 805px)
+      display: block
   &_speak-box-second
     background: url("../img/Speak_Box-2.png")
     width: 662px
     height: 174px
     margin-top: 24px
+    @media screen and (max-width: 960px)
+      background: url("../img/Speak_Box-2.png")
+      width: 543px
+      height: 134px
+      margin-top: 24px
+    @media screen and (max-width: 805px)
+      margin: 0 auto 20px
+      background: url("../img/Speak_Box-2.png")
+      width: 662px
+      height: 174px
+    @media screen and (max-width: 768px)
+      background: url("../img/Speak_Box-2.png")
+      width: 500px
+      height: 174px
+      margin-top: 24px

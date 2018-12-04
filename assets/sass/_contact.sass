@@ -5,37 +5,52 @@
   &_block-contact
     display: flex
     justify-content: space-between
-
+    @media screen and (max-width: 960px)
+      display: block
   &_contact-us
     max-width: 470px
+    @media screen and (max-width: 960px)
+      max-width: 740px
+      margin: 0 auto
+    @media screen and (max-width: 768px)
+      max-width: 540px
+      margin: 0 auto
   &_title
-    color: #d4d4d4
+    color: #ffffff
     font-size: 60px
     font-family: "Brandon Grotesque Light",sans-serif
     font-weight: 300
     margin-bottom: 17px
+    @media screen and (max-width: 960px)
+      text-align: center
   &_title-span
     font-family: "Brandon Grotesque Bold",sans-serif
     font-weight: 700
-    color: #d4d4d4
+    color: #ffffff
     font-size: 60px
   &_text-main
-    color: #d4d4d4
+    color: #ffffff
     font-family: "Brandon Grotesque",sans-serif
     font-size: 18px
     font-weight: 400
     margin-bottom: 47px
+    @media screen and (max-width: 960px)
+      text-align: center
   &_item-1
     max-width: 230px
+    @media screen and (max-width: 960px)
+      margin: auto
   &_item-2
     max-width: 230px
+    @media screen and (max-width: 960px)
+      margin: auto
   &_block-1,&_block-2,&_block-3,&_block-4,&_block-5,&_block-6
     display: flex
     justify-content: flex-start
     margin-bottom: 40px
   &_text
     margin-left: 15px
-    color: #d4d4d4
+    color: #ffffff
     font-family: "Brandon Grotesque",sans-serif
     font-size: 18px
     font-weight: 400
@@ -51,7 +66,14 @@
     display: flex
     flex-direction: column
     max-width: 470px
-
+    @media screen and (max-width: 960px)
+      margin:  auto
+      max-width: 660px
+      width: 100%
+    @media screen and (max-width: 768px)
+      margin:  auto
+      max-width: 460px
+      width: 100%
   &_name,&_email
     width: 360px
     margin-bottom: 25px
@@ -60,6 +82,8 @@
     font-size: 18px
     font-weight: 500
     padding: 15px
+    @media screen and (max-width: 960px)
+      width: 100%
   &_textarea
     width: 360px
     height: 190px
@@ -68,6 +92,8 @@
     font-size: 18px
     font-weight: 500
     padding: 15px
+    @media screen and (max-width: 960px)
+      width: 100%
 
 
 

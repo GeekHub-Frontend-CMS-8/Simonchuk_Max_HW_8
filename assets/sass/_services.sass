@@ -4,17 +4,26 @@
     display: flex
     justify-content: space-between
     padding-bottom: 100px
+    @media screen and (max-width: 768px)
+      display: block
   &_title-1
     font-family: "Brandon Grotesque Light",sans-serif
     font-weight: 300
     font-size: 60px
     color: #222222
     margin-bottom: 35px
+    @media screen and (max-width: 768px)
+      display: flex
+      justify-content: center
   &_title-2
     font-size: 60px
     color: #222222
     font-family: "Brandon Grotesque Bold",sans-serif
     font-weight: 700
+    @media screen and (max-width: 768px)
+      display: flex
+      justify-content: center
+      margin-left: 10px
   &_text-1
     color: #777777
     font-family: "Brandon Grotesque",sans-serif
@@ -22,25 +31,40 @@
     font-weight: 400
     margin-bottom: 30px
     max-width: 555px
+    @media screen and (max-width: 768px)
+      margin: 0 auto
+      margin-bottom: 30px
   &_text-2
     color: #777777
     font-family: "Brandon Grotesque",sans-serif
     font-size: 18px
     font-weight: 400
     max-width: 555px
+    @media screen and (max-width: 768px)
+      margin: 25px auto
   &_web
     background: url("../img/services-img-1.png")
-    width: 221px
+    max-width: 221px
+    width: 100%
     height: 221px
+    @media screen and (max-width: 768px)
+      margin: 0 auto
   &_branding
     display: flex
     justify-content: space-between
     padding-top: 100px
     padding-bottom: 100px
+    @media screen and (max-width: 768px)
+      display: block
+      padding-top: 50px
+      padding-bottom: 50px
   &_brand-img
     background: url("../img/branding-img.png")
-    width: 272px
+    max-width: 272px
+    width: 100%
     height: 197px
+    @media screen and (max-width: 768px)
+      margin: 0 auto 25px
 
 
 

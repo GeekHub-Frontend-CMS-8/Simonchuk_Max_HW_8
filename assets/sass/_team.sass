@@ -27,11 +27,16 @@
   &_description
     display: flex
     justify-content: space-between
+    @media screen and (max-width: 768px)
+      display: block
+
   &_circle
     background: url("../img/container-1.png")
     width: 234px
     height: 235px
     margin-bottom: 24px
+    @media screen and (max-width: 768px)
+      margin: 0 auto 24px
   &_title
     color: #d4d4d4
     font-family: "Brandon Grotesque",sans-serif
@@ -71,7 +76,10 @@
     font-family: "Brandon Grotesque",sans-serif
     font-size: 20px
     font-weight: 300
-    margin: 0 auto
+    margin: auto
+    @media screen and (max-width: 768px)
+      max-width: 470px
+      text-align: center
 .fa-twitter:hover
   background-color: #00aced
   border: 0.5px solid #ffffff
