@@ -1,4 +1,7 @@
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@font-face {
+  font-family: 'Brandon Grotesque Bold', sans-serif; }
+
 .wrapper {
   max-width: 940px;
   padding: 0 15px;
@@ -349,3 +352,84 @@
 .fa-google-plus:hover {
   background-color: #d95232;
   border: 0.5px solid #ffffff; }
+
+.section__contact {
+  padding-top: 100px;
+  background-color: #7690c5;
+  padding-bottom: 100px; }
+  .section__contact_block-contact {
+    display: flex;
+    justify-content: space-between; }
+  .section__contact_contact-us {
+    max-width: 470px; }
+  .section__contact_title {
+    color: #d4d4d4;
+    font-size: 60px;
+    font-family: "Brandon Grotesque Light",sans-serif;
+    font-weight: 300;
+    margin-bottom: 17px; }
+  .section__contact_title-span {
+    font-family: "Brandon Grotesque Bold",sans-serif;
+    font-weight: 700;
+    color: #d4d4d4;
+    font-size: 60px; }
+  .section__contact_text-main {
+    color: #d4d4d4;
+    font-family: "Brandon Grotesque",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 47px; }
+  .section__contact_item-1 {
+    max-width: 230px; }
+  .section__contact_item-2 {
+    max-width: 230px; }
+  .section__contact_block-1, .section__contact_block-2, .section__contact_block-3, .section__contact_block-4, .section__contact_block-5, .section__contact_block-6 {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px; }
+  .section__contact_text {
+    margin-left: 15px;
+    color: #d4d4d4;
+    font-family: "Brandon Grotesque",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center; }
+  .section__contact_dictates {
+    display: flex;
+    justify-content: space-between; }
+  .section__contact a {
+    font-size: 35px;
+    color: #ffffff; }
+  .section__contact_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 470px; }
+  .section__contact_name, .section__contact_email {
+    width: 360px;
+    margin-bottom: 25px;
+    color: #bbbbbb;
+    font-family: "Brandon Grotesque",sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px; }
+  .section__contact_textarea {
+    width: 360px;
+    height: 190px;
+    color: #bbbbbb;
+    font-family: "Brandon Grotesque",sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px; }
+
+.section__footer {
+  background-color: #7690c5;
+  padding-top: 40px;
+  padding-bottom: 31px; }
+  .section__footer_text {
+    color: #d4d4d4;
+    font-family: "Brandon Grotesque",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center; }
