@@ -10,12 +10,19 @@
     display: flex
     justify-content: center
     margin-bottom: 3px
+    @media screen and (max-width: 568px)
+      display: block
+      text-align: center
   &_span-title
     font-family: "Brandon Grotesque Bold",sans-serif
     font-weight: 700
     color: #d4d4d4
     font-size: 60px
     margin-left: 10px
+    @media screen and (max-width: 568px)
+      display: block
+      text-align: center
+      margin-bottom: 20px
   &_main-text
     color: #777777
     font-family: "Brandon Grotesque",sans-serif
@@ -24,6 +31,8 @@
     display: flex
     justify-content: center
     margin-bottom: 80px
+    @media screen and (max-width: 568px)
+      text-align: center
   &_description
     display: flex
     justify-content: space-between
@@ -80,6 +89,8 @@
     @media screen and (max-width: 768px)
       max-width: 470px
       text-align: center
+    @media screen and (max-width: 568px)
+      max-width: 290px
 .fa-twitter:hover
   background-color: #00aced
   border: 0.5px solid #ffffff
