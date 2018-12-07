@@ -134,7 +134,8 @@
     @media screen and (max-width: 768px) {
       .section__services_web-develop {
         display: flex;
-        flex-direction: column; } }
+        flex-direction: column-reverse;
+        padding-bottom: 50px; } }
   .section__services_title-first {
     font-family: "Brandon Grotesque Light", sans-serif;
     font-weight: 300;
@@ -193,7 +194,7 @@
     height: 221px; }
     @media screen and (max-width: 768px) {
       .section__services_web {
-        margin: 0 auto; } }
+        margin: 0 auto 25px; } }
   .section__services_branding {
     display: flex;
     justify-content: space-between;
@@ -326,7 +327,7 @@
     width: 100%; }
     @media screen and (max-width: 805px) {
       .section__clients_circle {
-        margin: auto; } }
+        margin: 0 auto 30px; } }
   .section__clients_speak-box {
     background: url("../img/Speak_Box.png");
     max-width: 663px;
@@ -398,7 +399,7 @@
     @media screen and (max-width: 805px) {
       .section__clients_block-second {
         display: flex;
-        flex-direction: column; } }
+        flex-direction: column-reverse; } }
   .section__clients_speak-box-second {
     background: url("../img/Speak_Box-2.png");
     max-width: 662px;
