@@ -6,35 +6,30 @@
     width: 100%
     @media screen and (max-width: 768px)
       margin: 0 auto
-      max-width: 500px
   &_img
     max-width: 72px
     width: 100%
     height: 72px
-  &_img-1
+  &_img-first
     background: url("../img/person-1 .png")
-  &_img-2
+  &_img-second
     background: url("../img/mobile-2.png")
-  &_img-3
+  &_img-third
     background: url("../img/ui-3.png")
-  &_block-1,&_block-2,&_block-3
+  &_block
     display: flex
-    justify-content: flex-start
+    justify-content: space-between
     margin-bottom: 45px
-    @media screen and (max-width: 768px)
-      display: flex
-      justify-content: space-between
   &_title
     color: #222222
-    font-family: "Brandon Grotesque",sans-serif
+    font-family: $font-main-first
     font-size: 22px
     font-weight: 500
     margin-bottom: 10px
     margin-left: 20px
   &_text
-    max-width: 300px
     color: #777777
-    font-family: "Brandon Grotesque",sans-serif
+    font-family: $font-main-first
     font-size: 18px
     font-weight: 400
     line-height: 18px
@@ -46,23 +41,16 @@
     width: 100%
     @media screen and (max-width: 768px)
       margin: 0 auto
-      max-width: 500px
-  &_block-4,&_block-5,&_block-6
-    display: flex
-    justify-content: flex-end
-    margin-bottom: 45px
-    @media screen and (max-width: 768px)
-      display: flex
-      justify-content: space-between
-  &_img-4
+  &_img-fourth
     background: url("../img/web-4.png")
-  &_img-5
+  &_img-fifth
     background: url("../img/animations-5.png")
-  &_img-6
+  &_img-sixth
     background: url("../img/photo-6.png")
   &_flex
     display: flex
     justify-content: space-between
     @media screen and (max-width: 768px)
       margin: 0 auto
-      display: block
+      display: flex
+      flex-direction: column

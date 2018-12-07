@@ -5,7 +5,7 @@
     padding-top: 60px
   &_title
     color: #d4d4d4
-    font-family: "Brandon Grotesque",sans-serif
+    font-family: $font-main-first
     font-size: 32px
     font-weight: 300
     display: flex
@@ -14,7 +14,7 @@
     @media screen and (max-width: 768px)
       text-align: center
   &_text
-    font-family: "Brandon Grotesque",sans-serif
+    font-family: $font-main-first
     font-size: 66px
     font-weight: 700
     color: #ffffff
@@ -23,11 +23,12 @@
     margin-bottom: 69px
     @media screen and (max-width: 768px)
       text-align: center
+      font-size: 50px
   &_button
     display: flex
     justify-content: center
   &_link
-    font-family: "Brandon Grotesque",sans-serif
+    font-family: $font-main-first
     font-size: 23px
     font-weight: 700
     border: 2px solid #ffffff
@@ -36,7 +37,9 @@
     box-sizing: border-box
     color: #ffffff
     text-decoration: none
-
     &:hover
       background-color: #FFFF00
       text-decoration: none
+    @media screen and (max-width: 568px)
+      padding: 17px 45px
+      font-size: 16px

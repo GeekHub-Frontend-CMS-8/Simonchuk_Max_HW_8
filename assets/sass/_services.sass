@@ -5,9 +5,10 @@
     justify-content: space-between
     padding-bottom: 100px
     @media screen and (max-width: 768px)
-      display: block
-  &_title-1
-    font-family: "Brandon Grotesque Light",sans-serif
+      display: flex
+      flex-direction: column
+  &_title-first
+    font-family: $font-Light-third
     font-weight: 300
     font-size: 60px
     color: #222222
@@ -16,35 +17,36 @@
       display: flex
       justify-content: center
     @media screen and (max-width: 568px)
-      display: block
+      display: flex
+      flex-direction: column
       text-align: center
       font-size: 40px
-  &_title-2
+  &_title-second
     font-size: 60px
     color: #222222
-    font-family: "Brandon Grotesque Bold",sans-serif
+    font-family: $font-main-first
     font-weight: 700
     @media screen and (max-width: 768px)
       display: flex
       justify-content: center
       margin-left: 10px
     @media screen and (max-width: 568px)
-      display: block
+      display: flex
+      flex-direction: column
       text-align: center
       font-size: 40px
-  &_text-1
+  &_text-first
     color: #777777
-    font-family: "Brandon Grotesque",sans-serif
+    font-family: $font-main-first
     font-size: 18px
     font-weight: 400
     margin-bottom: 30px
     max-width: 555px
     @media screen and (max-width: 768px)
       margin: 0 auto
-      margin-bottom: 30px
-  &_text-2
+  &_text-second
     color: #777777
-    font-family: "Brandon Grotesque",sans-serif
+    font-family: $font-main-first
     font-size: 18px
     font-weight: 400
     max-width: 555px
@@ -63,7 +65,8 @@
     padding-top: 100px
     padding-bottom: 100px
     @media screen and (max-width: 768px)
-      display: block
+      display: flex
+      flex-direction: column
       padding-top: 50px
       padding-bottom: 50px
   &_brand-img

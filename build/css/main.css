@@ -1,9 +1,27 @@
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 @font-face {
-  font-family: 'Brandon Grotesque Bold', sans-serif; }
+  font-family: 'Brandon Grotesque', sans-serif;
+  src: url("/../fonts/BrandonGrotesque-Regular.eot");
+  src: local("Brandon Grotesque Regular"), local("BrandonGrotesque-Regular"), url("/../fonts/BrandonGrotesque-Regular.eot?#iefix") format("embedded-opentype"), url("/../fonts/BrandonGrotesque-Regular.woff") format("woff"), url("/../fonts/BrandonGrotesque-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brandon Grotesque Bold', sans-serif;
+  src: url("/../fonts/BrandonGrotesque-Bold.eot");
+  src: local("Brandon Grotesque Bold"), local("BrandonGrotesque-Bold"), url("/../fonts/BrandonGrotesque-Bold.eot?#iefix") format("embedded-opentype"), url("/../fonts/BrandonGrotesque-Bold.woff") format("woff"), url("/../fonts/BrandonGrotesque-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brandon Grotesque Light', sans-serif;
+  src: url("/../fonts/BrandonGrotesque-Light.eot");
+  src: local("Brandon Grotesque Light"), local("BrandonGrotesque-Light"), url("/../fonts/BrandonGrotesque-Light.eot?#iefix") format("embedded-opentype"), url("/../fonts/BrandonGrotesque-Light.woff") format("woff"), url("/../fonts/BrandonGrotesque-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
 
 .wrapper {
-  max-width: 940px;
+  max-width: 970px;
   padding: 0 15px;
   margin: 0 auto;
   box-sizing: border-box; }
@@ -22,16 +40,15 @@
   @media screen and (max-width: 768px) {
     .section__header {
       display: flex;
-      justify-content: space-between;
       align-items: flex-start; } }
   .section__header_main {
     color: #ffffff;
-    font-family: Cubano,sans-serif;
+    font-family: Cubano, sans-serif;
     font-weight: 400;
     font-size: 25px; }
   .section__header_title {
     color: #ffffff;
-    font-family: Cubano,sans-serif;
+    font-family: Cubano, sans-serif;
     font-weight: 700;
     font-size: 25px;
     margin-left: 15px; }
@@ -43,8 +60,7 @@
     @media screen and (max-width: 768px) {
       .section__header_nav {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end; } }
+        flex-direction: column; } }
   .section__header_item {
     margin-left: 30px; }
     @media screen and (max-width: 768px) {
@@ -53,7 +69,7 @@
   .section__header_link-text {
     text-decoration: none;
     color: #ffffff;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 18px;
     font-weight: 500; }
     .section__header_link-text:hover {
@@ -67,7 +83,7 @@
       padding-top: 60px; } }
   .section__home_title {
     color: #d4d4d4;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 32px;
     font-weight: 300;
     display: flex;
@@ -77,7 +93,7 @@
       .section__home_title {
         text-align: center; } }
   .section__home_text {
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 66px;
     font-weight: 700;
     color: #ffffff;
@@ -86,12 +102,13 @@
     margin-bottom: 69px; }
     @media screen and (max-width: 768px) {
       .section__home_text {
-        text-align: center; } }
+        text-align: center;
+        font-size: 50px; } }
   .section__home_button {
     display: flex;
     justify-content: center; }
   .section__home_link {
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 23px;
     font-weight: 700;
     border: 2px solid #ffffff;
@@ -103,6 +120,10 @@
     .section__home_link:hover {
       background-color: #FFFF00;
       text-decoration: none; }
+    @media screen and (max-width: 568px) {
+      .section__home_link {
+        padding: 17px 45px;
+        font-size: 16px; } }
 
 .section__services {
   padding-top: 100px; }
@@ -112,56 +133,58 @@
     padding-bottom: 100px; }
     @media screen and (max-width: 768px) {
       .section__services_web-develop {
-        display: block; } }
-  .section__services_title-1 {
-    font-family: "Brandon Grotesque Light",sans-serif;
+        display: flex;
+        flex-direction: column; } }
+  .section__services_title-first {
+    font-family: "Brandon Grotesque Light", sans-serif;
     font-weight: 300;
     font-size: 60px;
     color: #222222;
     margin-bottom: 35px; }
     @media screen and (max-width: 768px) {
-      .section__services_title-1 {
+      .section__services_title-first {
         display: flex;
         justify-content: center; } }
     @media screen and (max-width: 568px) {
-      .section__services_title-1 {
-        display: block;
+      .section__services_title-first {
+        display: flex;
+        flex-direction: column;
         text-align: center;
         font-size: 40px; } }
-  .section__services_title-2 {
+  .section__services_title-second {
     font-size: 60px;
     color: #222222;
-    font-family: "Brandon Grotesque Bold",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-weight: 700; }
     @media screen and (max-width: 768px) {
-      .section__services_title-2 {
+      .section__services_title-second {
         display: flex;
         justify-content: center;
         margin-left: 10px; } }
     @media screen and (max-width: 568px) {
-      .section__services_title-2 {
-        display: block;
+      .section__services_title-second {
+        display: flex;
+        flex-direction: column;
         text-align: center;
         font-size: 40px; } }
-  .section__services_text-1 {
+  .section__services_text-first {
     color: #777777;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
     max-width: 555px; }
     @media screen and (max-width: 768px) {
-      .section__services_text-1 {
-        margin: 0 auto;
-        margin-bottom: 30px; } }
-  .section__services_text-2 {
+      .section__services_text-first {
+        margin: 0 auto; } }
+  .section__services_text-second {
     color: #777777;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 18px;
     font-weight: 400;
     max-width: 555px; }
     @media screen and (max-width: 768px) {
-      .section__services_text-2 {
+      .section__services_text-second {
         margin: 25px auto; } }
   .section__services_web {
     background: url("../img/services-img-1.png");
@@ -178,7 +201,8 @@
     padding-bottom: 100px; }
     @media screen and (max-width: 768px) {
       .section__services_branding {
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding-top: 50px;
         padding-bottom: 50px; } }
   .section__services_brand-img {
@@ -198,37 +222,31 @@
     width: 100%; }
     @media screen and (max-width: 768px) {
       .section__skills_item-first {
-        margin: 0 auto;
-        max-width: 500px; } }
+        margin: 0 auto; } }
   .section__skills_img {
     max-width: 72px;
     width: 100%;
     height: 72px; }
-  .section__skills_img-1 {
+  .section__skills_img-first {
     background: url("../img/person-1 .png"); }
-  .section__skills_img-2 {
+  .section__skills_img-second {
     background: url("../img/mobile-2.png"); }
-  .section__skills_img-3 {
+  .section__skills_img-third {
     background: url("../img/ui-3.png"); }
-  .section__skills_block-1, .section__skills_block-2, .section__skills_block-3 {
+  .section__skills_block {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-bottom: 45px; }
-    @media screen and (max-width: 768px) {
-      .section__skills_block-1, .section__skills_block-2, .section__skills_block-3 {
-        display: flex;
-        justify-content: space-between; } }
   .section__skills_title {
     color: #222222;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 10px;
     margin-left: 20px; }
   .section__skills_text {
-    max-width: 300px;
     color: #777777;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
@@ -241,21 +259,12 @@
     width: 100%; }
     @media screen and (max-width: 768px) {
       .section__skills_item-second {
-        margin: 0 auto;
-        max-width: 500px; } }
-  .section__skills_block-4, .section__skills_block-5, .section__skills_block-6 {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 45px; }
-    @media screen and (max-width: 768px) {
-      .section__skills_block-4, .section__skills_block-5, .section__skills_block-6 {
-        display: flex;
-        justify-content: space-between; } }
-  .section__skills_img-4 {
+        margin: 0 auto; } }
+  .section__skills_img-fourth {
     background: url("../img/web-4.png"); }
-  .section__skills_img-5 {
+  .section__skills_img-fifth {
     background: url("../img/animations-5.png"); }
-  .section__skills_img-6 {
+  .section__skills_img-sixth {
     background: url("../img/photo-6.png"); }
   .section__skills_flex {
     display: flex;
@@ -263,14 +272,15 @@
     @media screen and (max-width: 768px) {
       .section__skills_flex {
         margin: 0 auto;
-        display: block; } }
+        display: flex;
+        flex-direction: column; } }
 
 .section__clients {
   padding-top: 100px;
   background-color: #fafafa;
   padding-bottom: 100px; }
   .section__clients_main-title {
-    font-family: "Brandon Grotesque Light",sans-serif;
+    font-family: "Brandon Grotesque Light", sans-serif;
     font-weight: 300;
     color: #222222;
     font-size: 60px;
@@ -281,7 +291,7 @@
         display: block;
         text-align: center; } }
   .section__clients_main-span {
-    font-family: "Brandon Grotesque Bold",sans-serif;
+    font-family: "Brandon Grotesque Bold", sans-serif;
     font-weight: 700;
     color: #222222;
     font-size: 60px;
@@ -293,7 +303,7 @@
         text-align: center; } }
   .section__clients_main-text {
     color: #777777;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 22px;
     font-weight: 400;
     display: flex;
@@ -302,12 +312,12 @@
     @media screen and (max-width: 568px) {
       .section__clients_main-text {
         text-align: center; } }
-  .section__clients_block-1 {
+  .section__clients_block-first {
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px; }
     @media screen and (max-width: 805px) {
-      .section__clients_block-1 {
+      .section__clients_block-first {
         display: block; } }
   .section__clients_circle {
     background: url("../img/clients-img.png");
@@ -319,118 +329,99 @@
         margin: auto; } }
   .section__clients_speak-box {
     background: url("../img/Speak_Box.png");
-    width: 663px;
+    max-width: 663px;
+    width: 100%;
     height: 174px;
     margin-top: 30px; }
     @media screen and (max-width: 960px) {
       .section__clients_speak-box {
-        background: url("../img/Speak_Box.png");
-        width: 543px;
-        height: 144px;
-        margin-top: 30px; } }
+        max-width: 543px;
+        height: 154px; } }
     @media screen and (max-width: 805px) {
       .section__clients_speak-box {
         margin: 20px auto;
-        background: url("../img/Speak_Box.png");
-        width: 662px;
+        max-width: 662px;
         height: 174px; } }
     @media screen and (max-width: 768px) {
       .section__clients_speak-box {
-        background: url("../img/Speak_Box-2.png");
-        width: 500px;
+        max-width: 500px;
         height: 174px;
         margin-top: 24px; } }
     @media screen and (max-width: 568px) {
       .section__clients_speak-box {
-        border: 1px solid #bbbbbb;
-        width: 280px;
-        height: 254px;
-        margin-top: 24px; } }
+        max-width: 280px;
+        height: 170px; } }
   .section__clients_text {
-    width: 490px;
+    max-width: 490px;
+    width: 100%;
     color: #777777;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 21px;
     font-weight: 400;
     line-height: 28px;
     padding: 40px 74px 13px 74px; }
     @media screen and (max-width: 960px) {
       .section__clients_text {
-        width: 390px;
-        color: #777777;
-        font-family: "Brandon Grotesque",sans-serif;
-        font-size: 21px;
-        font-weight: 400;
-        line-height: 28px;
+        max-width: 390px;
         padding: 25px 54px 13px 54px; } }
     @media screen and (max-width: 805px) {
       .section__clients_text {
-        width: 490px;
-        color: #777777;
-        font-family: "Brandon Grotesque",sans-serif;
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 28px;
-        padding: 40px 74px 13px 74px; } }
+        max-width: 489px;
+        font-size: 25px; } }
     @media screen and (max-width: 768px) {
       .section__clients_text {
-        width: 350px;
+        max-width: 350px;
         color: #777777;
-        font-family: "Brandon Grotesque",sans-serif;
         font-size: 25px;
-        font-weight: 400;
-        line-height: 28px;
         padding: 20px 74px 13px 74px; } }
     @media screen and (max-width: 568px) {
       .section__clients_text {
-        max-width: 260px;
-        padding: 10px 24px 13px 24px; } }
+        max-width: 230px;
+        padding: 10px 24px 13px 24px;
+        font-size: 14px; } }
   .section__clients_authors {
     max-width: 331px;
+    width: 100%;
     color: #7690c5;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 20px;
     font-weight: 400;
     padding-left: 75px; }
     @media screen and (max-width: 568px) {
       .section__clients_authors {
-        max-width: 260px;
-        padding-left: 14px; } }
-  .section__clients_block-2 {
+        max-width: 230px;
+        padding-left: 27px;
+        font-size: 12px; } }
+  .section__clients_block-second {
     display: flex;
     justify-content: space-between; }
     @media screen and (max-width: 805px) {
-      .section__clients_block-2 {
-        display: block; } }
+      .section__clients_block-second {
+        display: flex;
+        flex-direction: column; } }
   .section__clients_speak-box-second {
     background: url("../img/Speak_Box-2.png");
-    width: 662px;
+    max-width: 662px;
+    width: 100%;
     height: 174px;
     margin-top: 24px; }
     @media screen and (max-width: 960px) {
       .section__clients_speak-box-second {
-        background: url("../img/Speak_Box-2.png");
-        width: 543px;
-        height: 134px;
-        margin-top: 24px; } }
+        max-width: 543px;
+        height: 134px; } }
     @media screen and (max-width: 805px) {
       .section__clients_speak-box-second {
         margin: 0 auto 20px;
-        background: url("../img/Speak_Box-2.png");
-        width: 662px;
+        max-width: 662px;
         height: 174px; } }
     @media screen and (max-width: 768px) {
       .section__clients_speak-box-second {
-        background: url("../img/Speak_Box-2.png");
-        width: 500px;
-        height: 174px;
-        margin-top: 24px; } }
+        max-width: 500px;
+        height: 174px; } }
     @media screen and (max-width: 568px) {
       .section__clients_speak-box-second {
-        border: 1px solid #bbbbbb;
-        width: 280px;
-        height: 254px;
-        margin-top: 24px; } }
+        max-width: 280px;
+        height: 170px; } }
 
 .section__logos {
   padding-top: 60px;
@@ -440,38 +431,39 @@
     justify-content: space-around; }
     @media screen and (max-width: 768px) {
       .section__logos_around {
-        display: block; } }
-  .section__logos_img-1 {
+        display: flex;
+        flex-direction: column; } }
+  .section__logos_img-first {
     background: url("../img/img-1.png");
     max-width: 161px;
     width: 100%;
     height: 30px; }
     @media screen and (max-width: 768px) {
-      .section__logos_img-1 {
+      .section__logos_img-first {
         margin: 0 auto 25px; } }
-  .section__logos_img-2 {
+  .section__logos_img-second {
     background: url("../img/img-2.png");
     max-width: 186px;
     width: 100%;
     height: 42px; }
     @media screen and (max-width: 768px) {
-      .section__logos_img-2 {
+      .section__logos_img-second {
         margin: 0 auto 25px; } }
-  .section__logos_img-3 {
+  .section__logos_img-third {
     background: url("../img/img-3.png");
     max-width: 131px;
     width: 100%;
     height: 41px; }
     @media screen and (max-width: 768px) {
-      .section__logos_img-3 {
+      .section__logos_img-third {
         margin: 0 auto 25px; } }
-  .section__logos_img-4 {
+  .section__logos_img-fourth {
     background: url("../img/img-4.png");
     max-width: 167px;
     width: 100%;
     height: 42px; }
     @media screen and (max-width: 768px) {
-      .section__logos_img-4 {
+      .section__logos_img-fourth {
         margin: 0 auto 25px; } }
 
 .section__team {
@@ -482,28 +474,30 @@
     color: #d4d4d4;
     font-size: 60px;
     font-weight: 200;
-    font-family: "Brandon Grotesque Light",sans-serif;
+    font-family: "Brandon Grotesque Light", sans-serif;
     display: flex;
     justify-content: center;
     margin-bottom: 3px; }
     @media screen and (max-width: 568px) {
       .section__team_main-title {
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center; } }
   .section__team_span-title {
-    font-family: "Brandon Grotesque Bold",sans-serif;
+    font-family: "Brandon Grotesque Bold", sans-serif;
     font-weight: 700;
     color: #d4d4d4;
     font-size: 60px;
     margin-left: 10px; }
     @media screen and (max-width: 568px) {
       .section__team_span-title {
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
         margin-bottom: 20px; } }
   .section__team_main-text {
     color: #777777;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 22px;
     font-weight: 400;
     display: flex;
@@ -517,10 +511,12 @@
     justify-content: space-between; }
     @media screen and (max-width: 768px) {
       .section__team_description {
-        display: block; } }
+        display: flex;
+        flex-direction: column; } }
   .section__team_circle {
     background: url("../img/container-1.png");
-    width: 234px;
+    max-width: 234px;
+    width: 100%;
     height: 235px;
     margin-bottom: 24px; }
     @media screen and (max-width: 768px) {
@@ -528,7 +524,7 @@
         margin: 0 auto 24px; } }
   .section__team_title {
     color: #d4d4d4;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 18px;
     font-weight: 700;
     display: flex;
@@ -536,7 +532,7 @@
     margin-bottom: 15px; }
   .section__team_text {
     color: #ebebeb;
-    font-family: "Brandon Grotesque Regular",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 16px;
     font-weight: 400;
     display: flex;
@@ -558,11 +554,14 @@
       width: 41px;
       height: 41px; }
   .section__team_block {
-    margin-bottom: 49px; }
+    max-width: 235px;
+    width: 100%;
+    margin: 0 auto 49px; }
   .section__team_bottom-text {
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
     color: #ebebeb;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 20px;
     font-weight: 300;
     margin: auto; }
@@ -599,10 +598,12 @@
     justify-content: space-between; }
     @media screen and (max-width: 960px) {
       .section__contact_block-contact {
-        display: block;
+        display: flex;
+        flex-direction: column;
         margin: auto; } }
   .section__contact_contact-us {
-    max-width: 470px; }
+    max-width: 470px;
+    width: 100%; }
     @media screen and (max-width: 960px) {
       .section__contact_contact-us {
         max-width: 740px;
@@ -614,44 +615,46 @@
   .section__contact_title {
     color: #ffffff;
     font-size: 60px;
-    font-family: "Brandon Grotesque Light",sans-serif;
+    font-family: "Brandon Grotesque Light", sans-serif;
     font-weight: 300;
     margin-bottom: 17px; }
     @media screen and (max-width: 960px) {
       .section__contact_title {
         text-align: center; } }
   .section__contact_title-span {
-    font-family: "Brandon Grotesque Bold",sans-serif;
+    font-family: "Brandon Grotesque Bold", sans-serif;
     font-weight: 700;
     color: #ffffff;
     font-size: 60px; }
   .section__contact_text-main {
     color: #ffffff;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 47px; }
     @media screen and (max-width: 960px) {
       .section__contact_text-main {
         text-align: center; } }
-  .section__contact_item-1 {
-    max-width: 230px; }
+  .section__contact_item-first {
+    max-width: 230px;
+    width: 100%; }
     @media screen and (max-width: 960px) {
-      .section__contact_item-1 {
+      .section__contact_item-first {
         margin: auto; } }
-  .section__contact_item-2 {
-    max-width: 230px; }
+  .section__contact_item-second {
+    max-width: 230px;
+    width: 100%; }
     @media screen and (max-width: 960px) {
-      .section__contact_item-2 {
+      .section__contact_item-second {
         margin: auto; } }
-  .section__contact_block-1, .section__contact_block-2, .section__contact_block-3, .section__contact_block-4, .section__contact_block-5, .section__contact_block-6 {
+  .section__contact_block {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 40px; }
   .section__contact_text {
     margin-left: 15px;
     color: #ffffff;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 18px;
     font-weight: 400;
     display: flex;
@@ -661,62 +664,76 @@
     justify-content: space-between; }
     @media screen and (max-width: 568px) {
       .section__contact_dictates {
-        display: block; } }
+        display: flex;
+        flex-direction: column; } }
   .section__contact a {
     font-size: 35px;
     color: #ffffff; }
   .section__contact_form {
     display: flex;
     flex-direction: column;
-    max-width: 470px; }
+    justify-content: center;
+    max-width: 470px;
+    width: 100%; }
     @media screen and (max-width: 960px) {
       .section__contact_form {
-        margin: auto;
-        max-width: 660px;
-        width: 100%; } }
+        margin: 0 auto;
+        max-width: 660px; } }
     @media screen and (max-width: 768px) {
       .section__contact_form {
         margin: 0 auto;
         max-width: 460px;
         width: 100%; } }
-    @media screen and (max-width: 458px) {
-      .section__contact_form {
-        margin: auto;
-        max-width: 230px;
-        width: 100%; } }
     @media screen and (max-width: 568px) {
       .section__contact_form {
-        display: flex;
-        justify-content: center;
-        max-width: 310px;
-        width: 100%; } }
+        max-width: 310px; } }
     @media screen and (max-width: 458px) {
       .section__contact_form {
-        margin: auto;
-        max-width: 230px;
-        width: 100%; } }
+        max-width: 210px; } }
   .section__contact_name, .section__contact_email {
-    width: 360px;
+    max-width: 430px;
+    width: 100%;
     margin-bottom: 25px;
     color: #bbbbbb;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 18px;
     font-weight: 500;
     padding: 15px; }
     @media screen and (max-width: 960px) {
       .section__contact_name, .section__contact_email {
-        width: 100%; } }
+        max-width: 630px; } }
+    @media screen and (max-width: 768px) {
+      .section__contact_name, .section__contact_email {
+        max-width: 430px; } }
+    @media screen and (max-width: 568px) {
+      .section__contact_name, .section__contact_email {
+        max-width: 290px; } }
+    @media screen and (max-width: 458px) {
+      .section__contact_name, .section__contact_email {
+        max-width: 180px;
+        font-size: 12px; } }
   .section__contact_textarea {
-    width: 360px;
+    max-width: 430px;
+    width: 100%;
     height: 190px;
     color: #bbbbbb;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 18px;
     font-weight: 500;
     padding: 15px; }
     @media screen and (max-width: 960px) {
       .section__contact_textarea {
-        width: 100%; } }
+        max-width: 630px; } }
+    @media screen and (max-width: 768px) {
+      .section__contact_textarea {
+        max-width: 430px; } }
+    @media screen and (max-width: 568px) {
+      .section__contact_textarea {
+        max-width: 290px; } }
+    @media screen and (max-width: 458px) {
+      .section__contact_textarea {
+        max-width: 180px;
+        font-size: 12px; } }
 
 .section__footer {
   background-color: #7690c5;
@@ -724,7 +741,7 @@
   padding-bottom: 31px; }
   .section__footer_text {
     color: #d4d4d4;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 16px;
     font-weight: 500;
     display: flex;
@@ -733,4 +750,5 @@
       .section__footer_text {
         text-align: center;
         max-width: 260px;
+        width: 100%;
         margin: auto; } }

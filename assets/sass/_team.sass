@@ -6,26 +6,28 @@
     color: #d4d4d4
     font-size: 60px
     font-weight: 200
-    font-family: "Brandon Grotesque Light",sans-serif
+    font-family: $font-Light-third
     display: flex
     justify-content: center
     margin-bottom: 3px
     @media screen and (max-width: 568px)
-      display: block
+      display: flex
+      flex-direction: column
       text-align: center
   &_span-title
-    font-family: "Brandon Grotesque Bold",sans-serif
+    font-family: $font-Bold-second
     font-weight: 700
     color: #d4d4d4
     font-size: 60px
     margin-left: 10px
     @media screen and (max-width: 568px)
-      display: block
+      display: flex
+      flex-direction: column
       text-align: center
       margin-bottom: 20px
   &_main-text
     color: #777777
-    font-family: "Brandon Grotesque",sans-serif
+    font-family: $font-main-first
     font-size: 22px
     font-weight: 400
     display: flex
@@ -37,18 +39,20 @@
     display: flex
     justify-content: space-between
     @media screen and (max-width: 768px)
-      display: block
+      display: flex
+      flex-direction: column
 
   &_circle
     background: url("../img/container-1.png")
-    width: 234px
+    max-width: 234px
+    width: 100%
     height: 235px
     margin-bottom: 24px
     @media screen and (max-width: 768px)
       margin: 0 auto 24px
   &_title
     color: #d4d4d4
-    font-family: "Brandon Grotesque",sans-serif
+    font-family: $font-main-first
     font-size: 18px
     font-weight: 700
     display: flex
@@ -56,7 +60,7 @@
     margin-bottom: 15px
   &_text
     color: #ebebeb
-    font-family: "Brandon Grotesque Regular",sans-serif
+    font-family: $font-main-first
     font-size: 16px
     font-weight: 400
     display: flex
@@ -78,11 +82,14 @@
       width: 41px
       height: 41px
   &_block
-    margin-bottom: 49px
+    max-width: 235px
+    width: 100%
+    margin: 0 auto 49px
   &_bottom-text
-    width: 640px
+    max-width: 640px
+    width: 100%
     color: #ebebeb
-    font-family: "Brandon Grotesque",sans-serif
+    font-family: $font-main-first
     font-size: 20px
     font-weight: 300
     margin: auto
@@ -103,5 +110,3 @@
 .fa-google-plus:hover
   background-color: #d95232
   border: 0.5px solid #ffffff
-
-
