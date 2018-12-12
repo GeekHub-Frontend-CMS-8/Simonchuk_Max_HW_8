@@ -1,0 +1,45 @@
+.section__header_home
+  background:  url("../img/home.png") no-repeat center/cover
+  padding-top: 70px
+.fa-paper-plane
+  &:hover
+    color: #FFFF00
+.section__header
+  align-items: center
+  display: flex
+  justify-content: space-between
+  @media screen and (max-width: 768px)
+    display: flex
+    align-items: flex-start
+  &_main
+    color: #ffffff
+    font-family: Cubano, sans-serif
+    font-weight: 400
+    font-size: 25px
+  &_title
+    color: #ffffff
+    font-family: Cubano, sans-serif
+    font-weight: 700
+    font-size: 25px
+    margin-left: 15px
+    &:hover
+      color: #FFFF00
+  &_nav
+    display: flex
+    justify-content: flex-end
+    @media screen and (max-width: 768px)
+      display: flex
+      flex-direction: column
+  &_item
+    margin-left: 30px
+    @media screen and (max-width: 768px)
+      margin-bottom: 20px
+  &_link-text
+    text-decoration: none
+    color: #ffffff
+    font-family: $font-main-first
+    font-size: 18px
+    font-weight: 500
+    &:hover
+      color: #FFFF00
+

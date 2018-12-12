@@ -33,4 +33,5 @@ gulp.task("watch", [ 'sass', "html", 'img'], function () {
     gulp.watch('assets/sass/**/*.sass', ["sass"]);
     gulp.watch('assets/**/*.html' , ['html']);
 	gulp.watch('assets/img/**/*', ["img"]);
+    gulp.watch('src/fonts/**/*', ["fonts"]);
 });
